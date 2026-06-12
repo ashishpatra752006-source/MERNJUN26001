@@ -1,0 +1,95 @@
+/* selectors*/
+
+/* Types of selectors
+    => simple selectors
+      ->id selectors
+      ->class selectors
+      ->tag name selectors
+      ->group name selectors
+      ->universal selectors
+*/
+#paragraph{
+    background-color: aqua;
+}
+
+.p-class{
+    color: brown;
+}
+h1{
+    background-color: blue;
+}
+/*#paragraph,h1{
+    font-style: italic;
+}
+*/    
+
+/*universal selectors*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* => cobinator selectors
+     ->descdent selectors
+     ->adjascent  sibling selectors
+     ->child selectors
+     ->general siblings selectors
+  
+*/
+.parent p{
+    background-color: chartreuse;
+}
+.parent>p{
+    color: crimson;
+}
+.parent + div{
+    color: darkorange;
+}
+.parent ~ div{
+    background-color: darkorchid;
+}
+/* => pseudo class selectors
+        ->link
+        ->visited
+        ->hover
+        ->active
+        ->focus
+        ->first-child
+        ->last-child
+        ->nth-child()
+*/
+
+section{
+    width: 300px;
+    height: 50px;
+    background-color: darkcyan;
+}
+
+section:hover{
+    background-color: darkgoldenrod;
+}
+
+section:active{
+    background-color: darkgray;
+}
+
+input:focus{
+    color: rgb(0, 8, 100);
+}
+li:first-child{
+    color: rgb(100, 0, 47);
+}
+li:last-child{
+    color: rgb(100, 83, 0);
+}
+
+li:nth-child(2){
+    color: rgb(17, 100, 0);
+}
+
+/* box model
+    => content
+    => padding
+    => border
+    => margin
+*/
